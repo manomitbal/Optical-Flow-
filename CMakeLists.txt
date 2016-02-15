@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.8)
+project (opticalFlow)
+find_package( OpenCV REQUIRED )
+include_directories(${openCV_INCLUDE_DIRS})
+add_executable ( opticalFlow opticalFlowTest.cpp )
+target_link_libraries(opticalFlow ${OpenCV_LIBS} )
